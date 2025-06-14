@@ -1,4 +1,4 @@
-# sqa_faulty_code.py
+
 
 def divide(a, b):
     return a / b  # ❌ Fault: No ZeroDivisionError handling
