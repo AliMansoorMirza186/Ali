@@ -1,20 +1,24 @@
-def divide(a, b):
-    return a / b if b != 0 else "Error"
+# Faulty Python code for SQA error detection demo
 
-def greet_user(user):
-    print("Welcome", user.get("name", "Guest"))
+def calculate_area(radius)
+    area = 3.14159 * radius ** 2
+    return area
 
-def main():
-    users = [{"id": 1}, {"name": "Ali"}, {}]
-    for user in users:
-        greet_user(user)
+def print_area():
+    r = input("Enter radius: ")
+    area = calculate_area(r)
+    print("Area of circle is: " + area)
 
-    print("10 / 0 =", divide(10, 0))
+def find_maximum(numbers):
+    max = 0
+    for i in range(1, len(numbers)):
+        if numbers[i] > max:
+            max = numbers[i]
+    return max
 
-    try:
-        result = 100 / int("zero")
-    except ValueError:
-        print("Caught ValueError")
+def main()
+    values = [5, 3, 9, 1, 6]
+    print("Maximum value:", find_maximum(values))
+    print_area()
 
-if __name__ == "__main__":
-    main()
+main()
